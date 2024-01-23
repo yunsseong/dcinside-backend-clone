@@ -1,12 +1,14 @@
 package com.dcinside;
 
+import com.dcinside.gallery.Gallery;
+import com.dcinside.gallery.GalleryRepository;
+import com.dcinside.post.Post;
+import com.dcinside.post.PostRepository;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.cglib.core.Local;
 
-import javax.swing.text.html.Option;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;

@@ -1,5 +1,6 @@
-package com.dcinside;
+package com.dcinside.gallery;
 
+import com.dcinside.post.Post;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

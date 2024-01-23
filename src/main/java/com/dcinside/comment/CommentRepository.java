@@ -1,4 +1,4 @@
-package com.dcinside;
+package com.dcinside.comment;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

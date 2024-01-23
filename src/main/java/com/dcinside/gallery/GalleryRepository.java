@@ -1,4 +1,4 @@
-package com.dcinside;
+package com.dcinside.gallery;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
