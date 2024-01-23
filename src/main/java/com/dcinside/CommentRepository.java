@@ -1,2 +1,6 @@
-package com.dcinside;public interface CommentRepository {
+package com.dcinside;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CommentRepository extends JpaRepository<Comment, Integer> {
 }
