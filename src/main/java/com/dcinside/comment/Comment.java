@@ -1,6 +1,7 @@
 package com.dcinside.comment;
 
 import com.dcinside.post.Post;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,7 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @JsonIgnore
     @ManyToOne
     private Post post;
 
@@ -22,4 +24,6 @@ public class Comment {
     private String content;
 
     private LocalDateTime createDate;
+
+    private LocalDateTime modifiedDate;
 }
