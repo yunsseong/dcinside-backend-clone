@@ -2,6 +2,7 @@ package com.dcinside.post;
 
 import com.dcinside.comment.Comment;
 import com.dcinside.gallery.Gallery;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,6 +18,7 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @JsonIgnore
     @ManyToOne
     private Gallery gallery;
 
@@ -28,6 +30,8 @@ public class Post {
 
     private LocalDateTime createDate;
 
+    private LocalDateTime modifiedDate;
+    
     @OneToMany(mappedBy = "post", cascade = CascadeType.REMOVE)
     private List<Comment> commentList;
 }
